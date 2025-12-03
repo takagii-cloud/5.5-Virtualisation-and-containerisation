@@ -10,8 +10,8 @@ On crée un répertoire `nettools` et un fichier `Dockerfile` avec le contenu su
 FROM debian:latest
 LABEL maintener="takagii <takagiizushii@takagii.fr>"
 RUN apt-get update \
-&& apt-get -y install iputils-ping curl traceroute \
-&& apt-get clean
+	&& apt-get -y install iputils-ping curl traceroute \
+	&& apt-get clean
 CMD ["/bin/bash"]
 ```
 
